@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define the Aeonik font */
+@font-face {
+    font-family: 'Aeonik';
+    src: url('./Fonts/New Aeonik Trials/AeonikTRIAL-Regular.woff2') format('woff2'),
+         url('./Fonts/New Aeonik Trials/AeonikTRIAL-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Apply Aeonik font globally */
+body {
+    font-family: 'Aeonik', sans-serif;
+  }
+
+  body {
+    @apply font-aeonik;
+  }
+  
