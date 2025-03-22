@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.0.15",
-    "@tailwindcss/vite": "^4.0.15"
+    "@tailwindcss/vite": "^4.0.15",
+    "boxicons": "^2.1.4"
   }
 }

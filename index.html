@@ -69,16 +69,12 @@
 
           <ul>
             <!-- Logout -->
-            <li
-              class="cursor-pointer p-[14px] rounded-full flex items-center"
-            >
+            <li class="cursor-pointer p-[14px] rounded-full flex items-center">
               <img class="max-w-[21px]" src="./images/Icon-logout.png" alt="" />
             </li>
 
             <!-- Settings -->
-            <li
-              class="cursor-pointer p-[14px] rounded-full flex items-center"
-            >
+            <li class="cursor-pointer p-[14px] rounded-full flex items-center">
               <img
                 class="max-w-[21px]"
                 src="./images/Icons-settings.png"
@@ -90,13 +86,86 @@
       </aside>
 
       <!-- Middle content -->
-      <div>
-        
-        
+      <div class="w-[70%]">
+        <header
+          class="w-full bg-white backdrop-blur-[40px] border border-[#E0E0E0] p-4 flex items-center justify-between"
+        >
+          <!-- Dropdown -->
+          <div class="relative">
+            <button
+              id="dropdownButton"
+              class="p-2 flex items-center gap-2 cursor-pointer text-[#212121]"
+              onclick="toggleDropdown()"
+            >
+              <span>John Smith</span>
+              <img
+                id="dropdownIcon"
+                class="w-[12px] transition-transform"
+                src="./images/icon-down.png"
+                alt="Dropdown Icon"
+              />
+            </button>
+            <!-- Dropdown Menu -->
+            <ul
+              id="dropdownMenu"
+              class="absolute left-0 mt-2 w-[225px] bg-white border border-gray-300 rounded-[8px] shadow-[0px_9px_10px_rgba(0,0,0,0.02)] hidden"
+            >
+              <li
+                class="p-2 text-[#212121] hover:bg-gray-100 cursor-pointer flex"
+              >
+                Robert Lindley
+                <span class="ml-auto text-[#9E9E9E]">13:43</span>
+              </li>
+              <!-- Divider -->
+              <hr class="w-full border-t border-[#E0E0E0]" />
+              <li
+                class="p-2 text-[#212121] hover:bg-gray-100 cursor-pointer flex"
+              >
+                Jane Smith
+                <span class="ml-auto text-[#9E9E9E]">13:16</span>
+              </li>
+              <!-- Divider -->
+              <hr class="w-full border-t border-[#E0E0E0]" />
+              <li
+                class="p-2 text-[#212121] hover:bg-gray-100 cursor-pointer flex"
+              >
+                Chris Thompson
+                <span class="ml-auto text-[#9E9E9E]">12:55</span>
+              </li>
+              <!-- Divider -->
+              <hr class="w-full border-t border-[#E0E0E0]" />
+              <li
+                class="p-2 text-[#212121] hover:bg-gray-100 cursor-pointer flex"
+              >
+                Aaminah Carlson
+                <span class="ml-auto text-[#9E9E9E]">12:21</span>
+              </li>
+              <!-- Divider -->
+              <hr class="w-full border-t border-[#E0E0E0]" />
+              <li
+                class="p-2 text-[#212121] hover:bg-gray-100 cursor-pointer flex"
+              >
+                Sufyan Caldwell
+                <span class="ml-auto text-[#9E9E9E]">11:58</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Button with Icon (Right Aligned) -->
+          <button
+            class="flex items-center gap-2 text-[#212121] px-4 py-2 w-[150px] rounded-md hover:bg-[#4DD1C4] hover:font-medium outline outline-1 outline-[#E0E0E0]"
+          >
+          <img class="w-5 h-5" src="./images/Icon-plus.png" alt="Plus Icon" />
+
+            <span>New notes</span>
+          </button>
+        </header>
       </div>
 
       <!-- Transcription section -->
       <aside></aside>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
