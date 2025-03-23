@@ -1,13 +1,13 @@
-// Dropdown menu icon change and toggle
+// Change dropdown icon
 function toggleDropdown() {
   const menu = document.getElementById("dropdownMenu");
   const icon = document.getElementById("dropdownIcon");
 
   menu.classList.toggle("hidden");
 
-  const iconPath = menu.classList.contains("hidden") 
-    ? "public/images/icon-down.png" 
-    : "public/images/icon-up.png";
-
-  icon.src = iconPath;
+  if (!menu.classList.contains("hidden")) {
+    icon.src = "./images/icon-up.png"; // Change to up icon
+  } else {
+    icon.src = "./images/icon-down.png"; // Change back to down icon
+  }
 }
