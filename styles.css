@@ -5,11 +5,21 @@
 /* Define the Aeonik font */
 @font-face {
     font-family: 'Aeonik';
-    src: url('./Fonts/New Aeonik Trials/AeonikTRIAL-Regular.woff2') format('woff2'),
-         url('./Fonts/New Aeonik Trials/AeonikTRIAL-Regular.woff') format('woff');
+    src: url('./fonts/Aeonik-Regular.woff2') format('woff2'),
+         url('./fonts/Aeonik-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
   }
+
+  /* Define the Neue Haas Grotesk Display Pro font */
+@font-face {
+  font-family: 'Neue Haas Grotesk Display Pro';
+  src: url('./fonts/Neue\ Haas\ Grotesk\ Display\ Pro.woff2') format('woff2'),
+       url('./fonts/Neue\ Haas\ Grotesk\ Display\ Pro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
   /* Apply Aeonik font globally */
 body {
