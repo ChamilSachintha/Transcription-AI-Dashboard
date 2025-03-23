@@ -257,7 +257,9 @@
         </div>
 
         <!-- Transcribing bottom section -->
-        <div class="mb-0 p-4 bg-white h-[88px] flex flex-col justify-center outline outline-1 outline-[#E0E0E0]">
+        <div
+          class="mb-0 p-4 bg-white h-[88px] flex flex-col justify-center outline outline-1 outline-[#E0E0E0]"
+        >
           <div class="flex items-center space-x-4">
             <!-- Text input field -->
             <div
@@ -293,7 +295,27 @@
       </div>
 
       <!-- Transcription section -->
-      <aside></aside>
+      <aside
+        class="w-[26%] bg-white flex flex-col items-center outline outline-1 outline-[#E0E0E0] z-10"
+      >
+        <!-- Header Section -->
+        <div
+          class="w-full flex items-center p-4 h-[64px] outline outline-1 outline-[#E0E0E0]"
+        >
+          <img class="max-w-[21px] mr-4" src="./images/minimize.png" alt="" />
+
+          <h3 class="text-xl font-medium text-[#212121] flex-1 text-center">
+            Transcription
+          </h3>
+        </div>
+
+        <!-- Captions -->
+        <div class="w-full pl-4">
+          <p class="font-regular pt-3 text-[#666666]">
+            Start recording to get started...
+          </p>
+        </div>
+      </aside>
     </div>
 
     <script src="js/script.js"></script>
