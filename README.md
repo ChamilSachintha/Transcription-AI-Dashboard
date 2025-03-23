@@ -1,7 +1,12 @@
 # Transcription-AI-Dashboard
 
-Follow the steps below to clone and run the project locally.
+---
 
+## Live demo 
+
+[Transcription AI Dashboard](https://transcription-ai-dashboard.vercel.app/)
+
+---
 
 ## Prerequisites
 
@@ -10,6 +15,8 @@ Follow the steps below to clone and run the project locally.
 
 
 ## Installation
+
+Follow the steps below to clone and run the project locally.
 
 1. Clone the repository:
     git clone https://github.com/ChamilSachintha/Transcription-AI-Dashboard.git
