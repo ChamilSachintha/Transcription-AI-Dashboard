@@ -9,8 +9,6 @@
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2/dist/tailwind.min.css" rel="stylesheet"> -->
     <!-- <link href="output.css" rel="stylesheet" /> -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-
   </head>
 
   <body>
@@ -88,8 +86,7 @@
       </aside>
 
       <!-- Middle content -->
-      <div class="w-[70%]">
-
+      <div class="w-[70%] min-h-screen flex flex-col justify-between">
         <!-- Header -->
         <header
           class="w-full bg-white backdrop-blur-[40px] border border-[#E0E0E0] p-4 flex items-center justify-between"
@@ -159,7 +156,7 @@
           <button
             class="flex items-center gap-2 text-[#212121] px-4 py-2 w-[150px] rounded-md hover:bg-[#4DD1C4] hover:font-medium outline outline-1 outline-[#E0E0E0]"
           >
-          <img class="w-5 h-5" src="./images/Icon-plus.png" alt="Plus Icon" />
+            <img class="w-5 h-5" src="./images/Icon-plus.png" alt="Plus Icon" />
 
             <span>New notes</span>
           </button>
@@ -168,49 +165,131 @@
         <!-- Main content -->
         <div class="container mx-auto p-[3.2rem]">
           <!-- Headings -->
-          <h3 class="text-[21px] text-[rgba(0,0,0,0.6)] font-medium tracking-[-0.5%] mt-20">Hi Jane,</h3>
-          <h2 class="text-[38px] text-[#212121] font-medium tracking-[-0.5%] mb-6">What would you like to do?</h2>
-        
+          <h3
+            class="text-[21px] text-[rgba(0,0,0,0.6)] font-medium tracking-[-0.5%]"
+          >
+            Hi Jane,
+          </h3>
+          <h2
+            class="text-[38px] text-[#212121] font-medium tracking-[-0.5%] mb-6"
+          >
+            What would you like to do?
+          </h2>
+
           <!-- Cards Container -->
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <!-- Card 1 -->
             <div class="flex flex-col text-left bg-white rounded-[18px] p-4">
-              <div class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3">
-              <img src="./images/tick.png" alt="Card Image" class="w-[1.2rem] object-cover" />
+              <div
+                class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3"
+              >
+                <img
+                  src="./images/tick.png"
+                  alt="Card Image"
+                  class="w-[1.2rem] object-cover"
+                />
+              </div>
+              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">
+                Suggested
+              </h3>
+              <p class="text-[16px] font-regular text-[#212121] leading-6">
+                Robert booked for 2 white fillings in upper 1A and upper 1B.
+              </p>
             </div>
-              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">Suggested</h3>
-              <p class="text-[16px] font-regular text-[#212121] leading-6">Robert booked for 2 white fillings in upper 1A and upper 1B.</p>
-            </div>
-        
+
             <!-- Card 2 -->
             <div class="flex flex-col text-left bg-white rounded-[18px] p-4">
-              <div class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3">
-              <img src="./images/calendar.png" alt="Card Image" class="w-[1.2rem] object-cover" />
+              <div
+                class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3"
+              >
+                <img
+                  src="./images/calendar.png"
+                  alt="Card Image"
+                  class="w-[1.2rem] object-cover"
+                />
+              </div>
+              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">
+                Continue from previous
+              </h3>
+              <p class="text-[16px] font-regular text-[#212121] leading-6">
+                Tooth ache and sensitivity in upper 1A.
+              </p>
             </div>
-              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">Continue from previous</h3>
-              <p class="text-[16px] font-regular text-[#212121] leading-6">Tooth ache and sensitivity in upper 1A.</p>
-            </div>
-        
+
             <!-- Card 3 -->
             <div class="flex flex-col text-left bg-white rounded-[18px] p-4">
-              <div class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3">
-              <img src="./images/plus.png" alt="Card Image" class="w-[1.2rem] object-cover" />
+              <div
+                class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3"
+              >
+                <img
+                  src="./images/plus.png"
+                  alt="Card Image"
+                  class="w-[1.2rem] object-cover"
+                />
+              </div>
+              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">
+                Update profile
+              </h3>
+              <p class="text-[16px] font-regular text-[#212121] leading-6">
+                Go to patient profile to add new information.
+              </p>
             </div>
-              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">Update profile</h3>
-              <p class="text-[16px] font-regular text-[#212121] leading-6">Go to patient profile to add new information.</p>
-            </div>
-        
+
             <!-- Card 4 -->
             <div class="flex flex-col text-left bg-white rounded-[18px] p-4">
-              <div class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3">
-              <img src="./images/file.png" alt="Card Image" class="w-[1.2rem] object-cover" />
-            </div>
-              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">Periodontitis</h3>
-              <p class="text-[16px] font-regular text-[#212121] leading-6">Bring up a template for Periodontitis, ready to populate.</p>
+              <div
+                class="w-[2.8rem] h-[2.8rem] flex items-center justify-center rounded-full outline outline-1 outline-[rgba(0,0,0,0.2)] p-1 mb-3"
+              >
+                <img
+                  src="./images/file.png"
+                  alt="Card Image"
+                  class="w-[1.2rem] object-cover"
+                />
+              </div>
+              <h3 class="text-[16px] text-[#212121] font-medium pb-2 pt-3">
+                Periodontitis
+              </h3>
+              <p class="text-[16px] font-regular text-[#212121] leading-6">
+                Bring up a template for Periodontitis, ready to populate.
+              </p>
             </div>
           </div>
         </div>
-        
+
+        <!-- Transcribing bottom section -->
+        <div class="mb-0 p-4 bg-white h-[88px] flex flex-col justify-center outline outline-1 outline-[#E0E0E0]">
+          <div class="flex items-center space-x-4">
+            <!-- Text input field -->
+            <div
+              class="flex items-center bg-[#F7F7F7] rounded-lg w-full h-[48px]"
+            >
+              <img
+                src="./images/img-neo.png"
+                alt="Neo Profile Image"
+                class="w-[24px] h-[24px] ml-3"
+              />
+              <div class="h-6 border-l border-[#E0E0E0] mx-3"></div>
+
+              <input
+                type="text"
+                placeholder='Say "Hey Neo" or type here to ask anything...'
+                class="placeholder-[#666666] placeholder:text-[14px] flex-1 py-2 text-sm bg-[#F7F7F7] focus:outline-none focus:border-none"
+              />
+            </div>
+
+            <!-- Button -->
+            <button
+              class="flex items-center w-[223px] h-[48px] px-4 py-2 bg-[#4DD1C4] text-[#212121] rounded-[8px] font-medium"
+            >
+              <img
+                src="./images/mike.png"
+                alt="Button Icon"
+                class="w-[1.2rem] mr-2"
+              />
+              Start transcribing
+            </button>
+          </div>
+        </div>
       </div>
 
       <!-- Transcription section -->
